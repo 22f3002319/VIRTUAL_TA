@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional, List
 import json
@@ -9,6 +10,15 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = FastAPI()
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allows all origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allows all methods
+    allow_headers=["*"],  # Allows all headers
+)
 
 class QuestionRequest(BaseModel):
     question: str
@@ -112,4 +122,25 @@ async def health_check():
         "status": "healthy", 
         "knowledge_base_loaded": True,
         "total_items": len(KNOWLEDGE_BASE.get("course_content", [])) + len(KNOWLEDGE_BASE.get("discourse_posts", []))
+    }
+
+@app.get("/")
+async def root():
+    """Root endpoint with API information"""
+    return {
+        "message": "TDS Virtual TA API",
+        "version": "1.0.0",
+        "endpoints": {
+            "health": "/health",
+            "api": "/api/",
+            "docs": "/docs"
+        },
+        "usage": {
+            "method": "POST",
+            "url": "/api/",
+            "body": {
+                "question": "Your question here",
+                "image": "base64_encoded_image_optional"
+            }
+        }
     }
