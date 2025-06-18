@@ -1,0 +1,81 @@
+{
+  "course_content": [
+    {
+      "url": "https://tds.s-anand.net/#/docker",
+      "title": "Docker vs Podman",
+      "content": "Podman is recommended for the course, but Docker is also acceptable. Both are containerization tools that can be used for running applications in isolated environments. For this course, you can use either Docker or Podman based on your preference and system compatibility.",
+      "tags": [
+        "docker",
+        "podman",
+        "containerization",
+        "setup"
+      ],
+      "type": "course_content",
+      "scraped_date": "2025-06-18T03:47:10.440842"
+    },
+    {
+      "url": "https://tds.s-anand.net/#/openai",
+      "title": "OpenAI API Usage",
+      "content": "For assignments requiring OpenAI API, you must use the specific model mentioned in the question. If the question asks for gpt-3.5-turbo-0125, use that model even if your AI proxy only supports gpt-4o-mini. You may need to use the OpenAI API directly in such cases.",
+      "tags": [
+        "openai",
+        "gpt",
+        "api",
+        "model"
+      ],
+      "type": "course_content",
+      "scraped_date": "2025-06-18T03:47:10.440842"
+    },
+    {
+      "url": "https://tds.s-anand.net/#/ga4",
+      "title": "GA4 Assignment Guidelines",
+      "content": "GA4 is the data sourcing assignment. Students need to collect and process data from various sources. The dashboard will display scores out of 10, and if a student scores 10/10 plus bonus points, the dashboard will show 110. Make sure to follow the specific requirements for data collection and processing.",
+      "tags": [
+        "ga4",
+        "data",
+        "sourcing",
+        "dashboard",
+        "grading"
+      ],
+      "type": "course_content",
+      "scraped_date": "2025-06-18T03:47:10.440842"
+    },
+    {
+      "url": "https://tds.s-anand.net/#/ga5",
+      "title": "GA5 Assignment Guidelines",
+      "content": "GA5 focuses on AI and language models. When using tokenizers, follow the approach demonstrated by Prof. Anand. Calculate tokens by using a tokenizer similar to what was shown in class, then multiply by the given rate. Always use the model specified in the question requirements.",
+      "tags": [
+        "ga5",
+        "ai",
+        "language",
+        "models",
+        "tokenizer"
+      ],
+      "type": "course_content",
+      "scraped_date": "2025-06-18T03:47:10.440842"
+    }
+  ],
+  "discourse_posts": [
+    {
+      "url": "https://discourse.onlinedegree.iitm.ac.in/t/ga5-question-8-clarification/155939",
+      "title": "GA5 Question 8 Clarification",
+      "content": "You must use gpt-3.5-turbo-0125, not gpt-4o-mini, even if the AI Proxy only supports gpt-4o-mini."
+    },
+    {
+      "url": "https://discourse.onlinedegree.iitm.ac.in/t/ga4-data-sourcing-discussion-thread-tds-jan-2025/165959/388",
+      "title": "GA4 Data Sourcing Discussion",
+      "content": "If a student scores 10/10 on GA4 as well as a bonus, the dashboard will show 110."
+    },
+    {
+      "url": "https://tds.s-anand.net/#/docker",
+      "title": "Docker vs Podman",
+      "content": "Podman is recommended for the course, but Docker is also acceptable."
+    }
+  ],
+  "metadata": {
+    "created_date": "2025-06-18T03:47:12.769527",
+    "total_items": 7,
+    "course_content_count": 4,
+    "discourse_posts_count": 3
+  }
+}

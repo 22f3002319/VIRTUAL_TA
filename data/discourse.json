@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/ga5-question-8-clarification/155939",
+    "title": "GA5 Question 8 Clarification",
+    "content": "You must use gpt-3.5-turbo-0125, not gpt-4o-mini, even if the AI Proxy only supports gpt-4o-mini."
+  },
+  {
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/ga4-data-sourcing-discussion-thread-tds-jan-2025/165959/388",
+    "title": "GA4 Data Sourcing Discussion",
+    "content": "If a student scores 10/10 on GA4 as well as a bonus, the dashboard will show 110."
+  },
+  {
+    "url": "https://tds.s-anand.net/#/docker",
+    "title": "Docker vs Podman",
+    "content": "Podman is recommended for the course, but Docker is also acceptable."
+  }
+]
